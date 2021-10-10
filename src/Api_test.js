@@ -35,7 +35,7 @@ class Api_test extends Component{
                             url:
                             <input type="text" name="url" value={this.state.url} onChange={this.handleChange} />
                         </label>
-                        <input type="submit" value="Check URL" />
+                        <input type="submit" value="Check URL222" />
                     </form>
                 </header>
             </div>
