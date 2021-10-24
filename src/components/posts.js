@@ -1,5 +1,5 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Posts = (props) => {
-    const {posts} = props;
+    const { posts } = props;
     const classes = useStyles();
     if (!posts || posts.length === 0) return <p>Can not find any posts, sorry</p>;
     return (
@@ -62,11 +62,7 @@ const Posts = (props) => {
                                             {post.title.substr(0, 50)}...
                                         </Typography>
                                         <div className={classes.postText}>
-                                            <Typography
-                                                component="p"
-                                                color="textPrimary"
-                                            ></Typography>
-                                            <Typography variant="p" color="textSecondary">
+                                            <Typography color="textSecondary">
                                                 {post.excerpt.substr(0, 60)}...
                                             </Typography>
                                         </div>
