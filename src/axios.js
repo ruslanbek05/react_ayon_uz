@@ -1,17 +1,6 @@
 import axios from 'axios';
 
-// const baseURL = 'http://127.0.0.1:8000/django/api/';
-
-var baseURL = 'django/api/';
-if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
-{
-    baseURL = 'http://127.0.0.1:8000/django/api/';
-
-}
-else
-{
-    baseURL = 'https://www.ayon.uz/django/api/';
-}
+const baseURL = 'http://127.0.0.1:8000/django/api/';
 
 const axiosInstance = axios.create({
     baseURL: baseURL,
