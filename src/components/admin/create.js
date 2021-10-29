@@ -97,10 +97,10 @@ export default function Create() {
 		formData.append('content', postData.content);
 		formData.append('image', postimage.image[0]);
 		axiosInstance.post(`admin/create/`, formData);
-		history.push({
-			pathname: '/admin/',
-		});
-		window.location.reload();
+		// history.push({
+		// 	pathname: '/admin/',
+		// });
+		// window.location.reload();
 	};
 
 	// const config = { headers: { 'Content-Type': 'multipart/form-data' } };
